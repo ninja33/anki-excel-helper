@@ -1,4 +1,4 @@
-## Excel User Defined Function e2c(w, f) for online dict inquery
+## Excel User Defined Function e2c(w, f)
 
 #### Purpose:
 
