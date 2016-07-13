@@ -5,12 +5,12 @@ from ntlm import HTTPNtlmAuthHandler
 import re
  
 def downloadPage(url):
-    user = 'apac\zh33012'
-    password = "Summer552"
+    user = ''
+    password = ''
 
     passman = urllib2.HTTPPasswordMgrWithDefaultRealm()
     passman.add_password(None, url, user, password)
-    #proxy = urllib2.ProxyHandler({'http': 'user:pass@hkproxy-t1.apac.nsroot.net:8080'})
+    #proxy = urllib2.ProxyHandler({'http': 'user:pass@proxy.com:8080'})
     #auth = urllib2.HTTPBasicAuthHandler()
     auth_NTLM = HTTPNtlmAuthHandler.HTTPNtlmAuthHandler(passman)
     opener = urllib2.build_opener(auth_NTLM)
