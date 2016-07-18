@@ -20,7 +20,7 @@ End Property
 Public Sub SendRequest()
 Set WinHttp = New WinHttp.winHTTPRequest
       With WinHttp
-            .SetProxy 2, "hkproxy-t1.apac.nsroot.net:8080"
+            '.SetProxy 2, "proxy.com:8080"
             .Open "GET", url & m_address.Value, True
             .Send
       End With
@@ -65,7 +65,7 @@ Private Function resultFromHaici(ByVal responseText As String) As Variant
     
     On Error Resume Next
     
-    s = Split(Split(responseText, "word-cont", 2)(1), "È¥¾äº££¬²é¸ü¶àÀı¾ä", 2)(0)
+    s = Split(Split(responseText, "word-cont", 2)(1), "å»å¥æµ·ï¼ŒæŸ¥æ›´å¤šä¾‹å¥", 2)(0)
     
     html.body.innerHTML = Split(Split(s, "phonetic", 2)(1), "basic clearfix", 2)(0)
     result(0) = Trim(html.getElementsByTagName("span")(0).innerText) & "&nbsp;" & Trim(html.getElementsByTagName("span")(1).innerText)
@@ -87,7 +87,7 @@ Private Function resultFromHaici(ByVal responseText As String) As Variant
     Next d
     'result(1) = Replace(html.getElementsByClassName("basic clearfix")(0).innerText, vbCrLf, "<br>")
     
-    html.body.innerHTML = Split(Split(s, "<h3>Àı¾ä</h3>", 2)(1), "È¥¾äº££¬²é¸ü¶àÀı¾ä", 2)(0)
+    html.body.innerHTML = Split(Split(s, "<h3>ä¾‹å¥</h3>", 2)(1), "å»å¥æµ·ï¼ŒæŸ¥æ›´å¤šä¾‹å¥", 2)(0)
     i = 1
     For Each x In html.getElementsByTagName("li")
         sample = Split(x.innerText, vbCrLf, 2)
