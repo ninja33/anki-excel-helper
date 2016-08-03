@@ -39,9 +39,14 @@ On Error Resume Next
 Dim html As New HTMLDocument, url, p, i, s
     With CreateObject("MSXML2.XMLHTTP") 'CreateObject("WinHttp.WinHttpRequest.5.1")'
 
-       url = "http://dict.cn/" & w
+        url = "http://dict.cn/" & w
+        'url = "http://www.zdic.net/?c=3&q=" & EncodeHelper.UrlEncode(s)
         Debug.Print url
         .Open "GET", url, True
+        '.setRequestHeader "Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+        '.setRequestHeader "UserAgent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36"
+        '.setRequestHeader "ContentType", "text/html; Charset=UTF-8"
+
         .setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
         .setRequestHeader "Referer", ""
         .Send
