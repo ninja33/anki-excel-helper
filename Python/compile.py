@@ -61,7 +61,7 @@ def parse_edict(path):
         def_segments = segments[2].split('<br>')
         for index, dfn in enumerate(filter(None, def_segments)):
             dfn = dfn.strip().replace('"','')
-            dfn_match = re.search(r'((?:(?:\w+\.)*)(.*)$', dfn)
+            dfn_match = re.search(r'((?:(?:\w+\.))*)(.*)$', dfn)
 
             tags_raw = set(filter(None, re.split(r'[\s\(\),]', dfn_match.group(1))))
             tags_raw = tags_raw.intersection(PARSED_TAGS)
