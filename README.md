@@ -1,5 +1,11 @@
-# a simple repository used to study anki and lwt #
+# A simple repository anki excel helper #
 
-it is a simple repository used to study flashcard app Anki and English reading tool LWT(learning with text)
+It is a simple repository for excel tools used for batch build flashcard in anki
+
+---
+
+# Excel批量制卡工具 #
+
+用于在Anki中批量制卡的Excel工具
 
 
