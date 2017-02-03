@@ -1,6 +1,4 @@
-## My Reading Log
-
-
+![](reading_log.png)
 
 | Date | Book Name | Count | Total |
 | --- | --- | --- | --- |
