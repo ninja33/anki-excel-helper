@@ -1,12 +1,10 @@
 function getSelText() {
-    var s = '';
-    if (window.getSelection) {
-        s = window.getSelection();
-    } else if (document.getSelection) {
-        s = document.getSelection();
-    } else if (document.selection) {
-        s = document.selection.createRange().text;
-    }
+    var s;
+    try {
+        s=((window.getSelection && window.getSelection()) || (document.getSelection && document.getSelection()) || (document.selection && document.selection.createRange && document.selection.createRange().text));
+    } catch(e){
+        s="nothing selected";
+    }    
     return s;
 }
 
@@ -14,7 +12,7 @@ function selectText()
 {
     var s = "";
     s = getSelText().toString();
-    alert("Text : [" + s + "] was selected");
+    alert(s);
 }
 
 (function(){
