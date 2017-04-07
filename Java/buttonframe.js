@@ -13,7 +13,7 @@ function getSelText() {
 function selectText()
 {
     var s = "";
-    s = getSelText();
+    s = getSelText().toString();
     alert("Text : [" + s + "] was selected");
 }
 
