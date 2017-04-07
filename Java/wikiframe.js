@@ -38,7 +38,7 @@
                 s = getSelText();
                 alert("Text : " + s + "was selected");
             }
-            window.onselect = selectText;
+            window.onselectionchange = selectText;
 
             if ($("#wikiframe").length == 0) {
                 var s = "";
