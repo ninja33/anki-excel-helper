@@ -73,13 +73,13 @@ function showSelectedText(){
         
         (window.myBookmarklet = function() {
             $("body").append("\
-            <div id='wikiframe'>\
-                <div id='wikiframe_veil' style=''>\
-                    <p><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\" onClick=\"showSelectedText()\"></p>\
+            <div id='ankiframe'>\
+                <div id='ankiframe_veil' style=''>\
+                    <a id='ankilink' href=\"anki://\"><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\"></a>\
                 </div>\
                 <style type='text/css'>\
-                    #wikiframe { float: right; }\
-                    #wikiframe_veil { display: block; position: fixed; bottom: 10px; right: 10px; cursor: pointer; z-index: 900; }\
+                    #ankiframe { float: right; }\
+                    #ankiframe_veil { display: block; position: fixed; bottom: 10px; right: 10px; cursor: pointer; z-index: 900; }\
                 </style>\
             </div>");
         })();
