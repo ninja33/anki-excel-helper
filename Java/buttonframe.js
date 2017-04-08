@@ -9,9 +9,6 @@ function userSelectionChanged() {
     // wait 500 ms after the last selection change event
     if (selectionEndTimeout) {
         clearTimeout(selectionEndTimeout);
-        $('.log ol').append('<li>User Selection Changed</li>');
-        // scroll to bottom of the div
-        $('.log').scrollTop($('.log ol').height());
     }
     selectionEndTimeout = setTimeout(function () {
         $(window).trigger('selectionEnd');
@@ -32,7 +29,7 @@ function getSelectionText() {
 
 
 function changeAnkiLink(){
-    var link = 'anki://x-callback-url/addnote?profile=' + encodeURIComponent('User 1') + '&type=Basic&=Default&fldFront=' + encodeURIComponent(selectedText);
+    var link = 'anki://x-callback-url/addnote?profile=' + encodeURIComponent('User 1') + '&type=Basic&deck=Default&fldFront=' + encodeURIComponent(selectedText);
     document.getElementById("ankilink").href = link; 
     //alert(link);
 }
