@@ -79,7 +79,7 @@ function showSelectedText(){
                 </div>\
                 <style type='text/css'>\
                     #wikiframe { float: right; }\
-                    #wikiframe_veil { display: block; position: fixed; width: 64px; height: 64px; bottom: 10px; right: 10px; cursor: pointer; z-index: 900; }\
+                    #wikiframe_veil { display: block; position: fixed; width: 64px; height: 64px; bottom: 20px; right: 10px; cursor: pointer; z-index: 900; }\
                 </style>\
             </div>");
         })();
