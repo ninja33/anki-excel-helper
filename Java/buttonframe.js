@@ -75,7 +75,7 @@ function showSelectedText(){
             $("body").append("\
             <div id='wikiframe'>\
                 <div id='wikiframe_veil' style=''>\
-                    <p><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_01.png\" onClick=\"showSelectedText()\"></p>\
+                    <p><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\" onClick=\"showSelectedText()\"></p>\
                 </div>\
                 <style type='text/css'>\
                     #wikiframe_veil { display: block; position: fixed; width: 50; height: 50; bottom: 0; right: 0; cursor: pointer; z-index: 900; }\
