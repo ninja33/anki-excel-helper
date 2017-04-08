@@ -78,8 +78,8 @@ function showSelectedText(){
                     <p><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\" onClick=\"showSelectedText()\"></p>\
                 </div>\
                 <style type='text/css'>\
-                    #wikiframe_veil { display: block; position: fixed; width: 50; height: 50; bottom: 10; right: 20; background-color: rgba(255, 255, 255, 0.1); cursor: pointer; z-index: 900; }\
-                    //#wikiframe_veil p { color: black; font: normal normal bold 20px/20px Helvetica, sans-serif; position: absolute; top: 50%; left: 50%; width: 10em; margin: -10px auto 0 -5em; text-align: center; }\
+                    #wikiframe { float: right; }\
+                    #wikiframe_veil { display: block; position: fixed; width: 64px; height: 64px; bottom: 10px; right: 20px; cursor: pointer; z-index: 900; }\
                 </style>\
             </div>");
         })();
