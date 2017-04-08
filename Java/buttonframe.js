@@ -32,7 +32,7 @@ function getSelectionText() {
 
 
 function changeAnkiLink(){
-    var link = encodeURIComponent('anki://x-callback-url/addnote?profile=User 1&type=Basic&=Default&fldFront=' + selectedText);
+    var link = 'anki://x-callback-url/addnote?' + encodeURIComponent('profile=User 1&type=Basic&=Default&fldFront=' + selectedText);
     document.getElementById("ankilink").href = link; 
     //alert(link);
 }
