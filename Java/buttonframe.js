@@ -31,8 +31,10 @@ function getSelectionText() {
 }
 
 
-function showSelectedText(){
-    alert(selectedText);
+function changeAnkiLink(){
+    var link = encodeURIComponent('anki://x-callback-url/addnote?profile=User 1&type=Basic&=Default&fldFront=' + selectedText);
+    document.getElementById("ankilink").href = link; 
+    //alert(link);
 }
 
 (function(){
@@ -67,7 +69,8 @@ function showSelectedText(){
             selectedText = getSelectionText();
             // if the selection is not empty show it :)
             if(selectedText != ''){
-                // scroll to bottom of the div
+                // change anki link
+                changeAnkiLink();
             }
         });
         
