@@ -3,7 +3,8 @@ var selectedText;
 var selectionEndTimeout = null;
 
 // bind selection change event to my function
-document.onselectionchange = userSelectionChanged;
+document.addEventListener("selectionchange", userSelectionChanged);
+document.addEventListener("touchstart", touchStart);
 
 function userSelectionChanged() {
     // wait 500 ms after the last selection change event
@@ -13,6 +14,10 @@ function userSelectionChanged() {
     selectionEndTimeout = setTimeout(function () {
         $(window).trigger('selectionEnd');
     }, 500);
+}
+
+function touchStart(e){
+    alert(e.clientX + "|" + e.clientY);
 }
 
 
