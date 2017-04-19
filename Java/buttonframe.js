@@ -4,7 +4,7 @@ var selectionEndTimeout = null;
 
 // bind selection change event to my function
 document.addEventListener("selectionchange", userSelectionChanged);
-document.addEventListener("touchstart", touchStart);
+//document.addEventListener("touchstart", touchStart);
 
 function userSelectionChanged() {
     // wait 500 ms after the last selection change event
@@ -16,9 +16,9 @@ function userSelectionChanged() {
     }, 500);
 }
 
-function touchStart(event){
-    alert(event.touches[0].pageX + "|" + event.touches[0].pageY);
-}
+//function touchStart(event){
+//    alert(event.touches[0].pageX + "|" + event.touches[0].pageY);
+//}
 
 
 // helper function
