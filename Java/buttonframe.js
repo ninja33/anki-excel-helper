@@ -16,7 +16,7 @@ function userSelectionChanged() {
     }, 500);
 }
 
-function touchStart(e){
+function touchStart(event){
     alert(event.touches[0].pageX + "|" + event.touches[0].pageY);
 }
 
