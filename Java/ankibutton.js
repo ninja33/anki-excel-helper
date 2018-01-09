@@ -1,8 +1,8 @@
 let profile = encodeURIComponent('User 1');
 let deckName = encodeURIComponent('Default');
-let typeName = encodeURIComponent('Basic');
-let fieldWord = encodeURIComponent('Front');
-let fieldSentence = encodeURIComponent('Back');
+let typeName = encodeURIComponent('Antimoon');
+let fieldWord = encodeURIComponent('expression');
+let fieldSentence = encodeURIComponent('sentence');
 let blockTags = ['LI', 'P', 'DIV', 'BODY'];
 const enReg = /^[^\u4e00-\u9fa5]+$/i;
 const numReg = /\d/;
