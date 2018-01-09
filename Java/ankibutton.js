@@ -1,5 +1,5 @@
 let profile = encodeURIComponent('User 1');
-let deckName = encodeURIComponent('Default');
+let deckName = encodeURIComponent('Antimoon');
 let typeName = encodeURIComponent('Antimoon');
 let fieldWord = encodeURIComponent('expression');
 let fieldSentence = encodeURIComponent('sentence');
