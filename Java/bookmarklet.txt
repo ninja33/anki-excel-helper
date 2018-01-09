@@ -1,1 +1,1 @@
-javascript:(function(){if(window.myBookmarklet!==undefined){myBookmarklet();}else{var s=document.createElement("script");s.type="text/javascript",s.src="https://rawgit.com/ninja33/anki-excel-helper/master/Java/buttonframe.js?bust="+new Date().getTime(),document.body.appendChild(s)}})();
+javascript:(function(){if(window.myBookmarklet!==undefined){myBookmarklet();}else{var s=document.createElement("script");s.type="text/javascript",s.src="https://rawgit.com/ninja33/anki-excel-helper/master/Java/ankibutton.js?bust="+new Date().getTime(),document.body.appendChild(s)}})();
