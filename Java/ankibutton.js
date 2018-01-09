@@ -41,9 +41,9 @@ function autocutSentenceIfNeeded(word, sentence) {
             }
         }
 
-        return arr.slice(start, end + 1).join('');
+        return arr.slice(start, end + 1).join('').replace(word,'<b>'+word+'</b>');
     } else {
-        return sentence;
+        return sentence.replace(word,'<b>'+word+'</b>');
     }
 }
 
