@@ -93,18 +93,22 @@ function initMyBookmarklet() {
         changeAnkiLink(word, node);
     },false);
 
-    var elemDiv = document.createElement('div');
-    elemDiv.innerHTML = "\
-        <div id='ankiframe'>\
-            <div id='ankiframe_veil' style=''>\
-                <a id='ankilink' href=\"anki://\"><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\"></a>\
-            </div>\
-            <style type='text/css'>\
-                #ankiframe { float: right; }\
-                #ankiframe_veil { display: block; position: fixed; bottom: 10px; right: 10px; cursor: pointer; z-index: 900; }\
-            </style>\
-        </div>";
-    document.body.appendChild(elemDiv);
+
+    (window.myBookmarklet = function() {
+        var elemDiv = document.createElement('div');
+        elemDiv.innerHTML = "\
+            <div id='ankiframe'>\
+                <div id='ankiframe_veil' style=''>\
+                    <a id='ankilink' href=\"anki://\"><img src=\"https://raw.githubusercontent.com/ninja33/anki-excel-helper/master/Java/plus_64.png\"></a>\
+                </div>\
+                <style type='text/css'>\
+                    #ankiframe { float: right; }\
+                    #ankiframe_veil { display: block; position: fixed; bottom: 10px; right: 10px; cursor: pointer; z-index: 900; }\
+                </style>\
+            </div>";
+        document.body.appendChild(elemDiv);
+    })();
+        
 }
 
 (function(){
