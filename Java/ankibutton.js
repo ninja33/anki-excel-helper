@@ -80,7 +80,7 @@ function changeAnkiLink(word, node){
     var expression = encodeURIComponent(word);
     var sentence = encodeURIComponent(getSentence(word, node));
 
-    var link = `anki://x-callback-url/addnote?profile=${profile}&type=${typeName}&deck=${deckName}&fld${fieldWord}=${expression}&fld${fieldSentence}=${sentence}`;
+    var link = `anki://x-callback-url/addnote?profile=${profile}&type=${typeName}&deck=${deckName}&fld${fieldWord}=${expression}&fld${fieldSentence}=${sentence}&dupes=1`;
     document.getElementById("ankilink").href = link; 
     //alert(link);
 }
